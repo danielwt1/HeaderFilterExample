@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ *
+ */
 @RestController
 @RequestMapping("/v1/headers")
 public class ExampleController {
@@ -17,6 +20,10 @@ public class ExampleController {
         this.exampleService = exampleService;
     }
 
+    /**
+     *
+     * @return
+     */
     @GetMapping
     public ResponseEntity<String>getHello(){
         this.exampleService.ejemplo1();
