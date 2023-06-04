@@ -14,7 +14,7 @@ public class BeansConfig {
     public BeansConfig(HeaderContainer headerContainer) {
         this.headerContainer = headerContainer;
     }
-    //registro de filtro para ser usado en spring
+    //registro de filtro para ser usado en spring boot
     @Bean
     public FilterRegistrationBean<HeaderFilter> headerFilterRegistration() {
         FilterRegistrationBean<HeaderFilter> registration = new FilterRegistrationBean<>();
